@@ -37,13 +37,13 @@ function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
 	//añadiendo los elementos a la clase list-recipe haciendo referencia a su padre cada vez
 	$(".list-recipes").append("<a class='item-recipe' href='#'></a>");
-	$(".item-recipe").append("<span class='attribution'</span>");
-	$(".attribution").append("<span class='title-recipe'</span>");
-	$(".title-recipe").append("<span class='metadata-recipe'</span>");
-	$(".metadata-recipe").append("<span class='author-recipe'</span>");
-	$(".metadata-recipe").append("<span class='bookmarks-recipe'</span>");
-	$(".bookmarks-recipe").append("<span class='icon-bookmark'</span>");
-	$(".item-recipe").append("<img src='URL DE LA IMAGEN'/>");
+	$(".item-recipe").append("<span class='attribution'></span>");
+	$(".attribution").append("<span class='title-recipe'>" + recipe.title + "</span>");
+	$(".attribution").append("<span class='metadata-recipe'>" + recipe.attribution +"</span>");
+	$(".metadata-recipe").append("<span class='author-recipe'>"+ recipe.name +"</span>");
+	$(".metadata-recipe").append("<span class='bookmarks-recipe'></span>");
+	$(".bookmarks-recipe").append("<span class='icon-bookmark'></span>");
+	$(".item-recipe").append("<img src='img/recipes/320x350/.jpg'/>");
 }
 renderRecipe(recipe);
 

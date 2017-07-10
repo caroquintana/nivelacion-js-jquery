@@ -19,8 +19,19 @@ $(document).ready( function(){
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
+//Etapa4.recorriendo el arreglo con forEach donde le digo que recorra recipesArray y si hightighted es true, me invoque renderRecipe
+//Resultado se muestra en consola.
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	
+	var rec = recipesArray.forEach(function(el){
+		// console.log(el.highlighted);
+		if(el.highlighted === true){
+			//	return(renderRecipe(recipe))
+			renderRecipe(el.highlighted);
+		}
+	});
+
 }
 
 /*

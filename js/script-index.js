@@ -1,7 +1,13 @@
 $(document).ready( function(){
 
-	//ocultar la flecha
+	//1.ocultar la flecha
 	$( "a.nav-item.js-back" ).hide();
+
+	//2.añadiendo texto
+	function printNews(){
+		$('.printNews').append("NUEVAS RECETAS");
+	}
+	printNews();
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);

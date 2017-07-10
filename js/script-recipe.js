@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
-	//Mostrar flecha
+	//1.Mostrar flecha
 	$( "a.nav-item.js-back").show();
-	//Ocultar menu
+	//1.Ocultar menu
 	$( "a.nav-item.js-menu").hide();
 })

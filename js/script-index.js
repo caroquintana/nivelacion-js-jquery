@@ -1,5 +1,8 @@
 $(document).ready( function(){
 
+	//ocultar la flecha
+	$( "a.nav-item.js-back" ).hide();
+
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 

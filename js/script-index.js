@@ -23,8 +23,6 @@ $(document).ready( function(){
 	}
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
-	renderActivity(activitiesArray);
-	
 
 });
 
@@ -38,8 +36,7 @@ function renderRecipe(recipe) {
 * Función que se encarga de pintar todas las actividades
 */
 function renderActivities(activitiesArray) {
-	console.log('Activities: ', activitiesArray);
-	//ocultar el div indicado
+	//console.log('Activities: ', activitiesArray);
 	if(activitiesArray.length>0){
 		$(".wrapper-message").hide();
 	}
@@ -50,10 +47,16 @@ function renderActivities(activitiesArray) {
 * Aqui se tiene que crear el HTML que esta en el 
 * archivo "templates/templates-activity.html"
 */
+//6.intentando mostrar estos elementos.
+function printListActivities(activitiesArray){
+	$(".list-activities").append("<a href='#' class='item-activity'><span class='attribution'><span class='avatar'><img src='img/acitivity/" + activitiesArray.userAvatar + "class='image-avatar'></span><span class='meta'><span class='author'>" + acitivitiesArray.userName + "</span> made <span class='recipe'>" + acitivitiesArray.recipeName + "</span>:" + activitiesArray.text + "<span class='location'>&mdash;" + activitiesArray.place + "</span></span></span><div class='bg-image' style='background-image: url(" + activitiesArray.image + ");'></div></a>");
+}
+
 
 function renderActivity(recipe) {
 
-}
+};
+
 
 
 
